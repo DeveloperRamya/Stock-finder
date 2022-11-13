@@ -18,6 +18,8 @@
 
 - npm start
 
+-[To view](http://localhost:5000/api/getstockdata)
+
 ### In Client side,
 
 -  need to install these dependencies
@@ -27,3 +29,5 @@
 #### To run
 
 - npm start
+
+-[To view](http://localhost:3000/index.html)
