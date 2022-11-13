@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    Font-Family: 'Playfair Display', Serif;
+    Font-Size: 20px;
+    font-family: 'Lato', sans-serif;
+    Font-Size: 16px;
+}
+.column{
+  padding:0 2vw;
+  margin:0 0 .75rem 0;
+}
+.small-12{
+  flex-basis:100%;
+}
+input type[button]{
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button{
+    align-items: center;
+    justify-content: center;
+    background-color:green;
+    font-size:20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+  header{
+  background-color: #d62828;
+}
+  nav { 
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:15px;
+  font-size: 20px; 
+ }
+  li {
+    list-style: none;
+    justify-content: space-evenly;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ 
+  select{
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+
+    @media (max-width: 650px) {
+        nav {
+          margin-top: 10px;
+          width: 100%;
+          display: flex;
+         flex-wrap: wrap;
+          align-items: center;
+          text-align: center;
+          padding: 0 50px;
+        }
+        nav li {
+          padding-bottom: 5px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        footer p{
+          padding: 30px;
+              font-size:small;
+              color: black;
+        }
+      .medium-6{
+        flex-basis:50%;
+      }
+    
+  
+      /* desktop*/
+      @media only screen and (min-width:924px){
+                .large-3{        
+             flex-basis:25%;
+            }  
+       footer p{
+        padding: 30px;
+            font-size:small;
+            color: black;
+        }
+      }
+    }

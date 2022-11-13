@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+  <link href="resize.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+
+  <title>Stock Finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- <div class="row limited">  -->
+    <section class="column small-12 medium-6 large-3">
+      <nav>
+        <h1>Stock Finder</h1>
+
+          <ul class="topnav" id="topnav">
+            <li><a href=index.html>Home</a></li>
+            <li><a href=chart.html>Chart</a></li>
+
+          </ul>
+      </nav>
+    </section>
+  </header>
+
+    
+  
+  <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+  <script>
+    var Symbols = ["IBM","AAPL","TSLA","UPS","MSFT"];
+    var Volumes = ["5305406", "74917794", "131961232", "3303567","45666487"];
+    var barColors = ["red", "green","blue","orange","brown"];
+
+    new Chart("myChart", {
+    type: "bar",
+    data: {
+    labels: Symbols,
+    datasets: [{
+    backgroundColor: barColors,
+    data: Volumes
+    }]
+    },
+    options: {
+    legend: {display: false},
+    title: {
+    display: true,
+    text: "Stock Vs Volume Comparison"
+    }
+    }
+    }); 
+   
+
+
+</script>
+<footer>
+  <section class="column small-12 medium-6 large-3">
+
+    <p class="col">Copyright &#169;
+      <script>document.write(new Date().getFullYear())</script> All Rights Reserved
+    </p>
+  </section>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+    <link href="resize.css" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    
+    <title>Stock</title>
+  </head>
+  <body>
+    
+      <header id="header">        
+       <!-- <div class="row limited">  -->
+        <section class="column small-12 medium-6 large-3">
+                  <nav id="nav-bar" class="container">    
+                    <h1>Stock Finder</h1>         
+                <ul>
+                    <li><a class="nav-link" href=index.html>Home</a></li>
+                    <li><a class="nav-link" href=chart.html>Chart</a></li>
+                
+                </ul>
+              </nav>
+              </section>
+            </header>
+   <main>
+    <section class="column small-12 medium-6 large-3">
+      
+            <form class="" action="/data" method="post"></form>
+            
+        <p>Get last price for stock entered</p>
+        
+        <select class="dropdown" name="stock" id='symbol' >
+          <option value="IBM">IBM</option>
+          <option value="TSLA">TSLA</option>
+          <option value="MSFT">MSFT</option>
+          <option value="AAPL">AAPL</option>
+          <option value="UPS">UPS</option>
+
+        </select>
+          
+            <button type="button" onclick="getStockData()" id="out" class="submit-button" value='submit'>Submit<br></button>
+          <div id="demo"></div>
+      </section>
+     </main>
+ <footer>
+  <section class="column small-12 medium-6 large-3">
+         <p class="col">Copyright &#169;
+          <script>document.write(new Date().getFullYear())</script> All Rights Reserved
+      </p>
+    </section>  
+    </footer>
+  <script src="app.js"></script> 
+  
+</body>
+
+</html>

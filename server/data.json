@@ -1,0 +1,39 @@
+{
+    "Stocks" : [
+        {
+            "Symbol":"IBM",
+            "OpenPrice" : "140.26",
+            "ClosingPrice":"141.36",
+            "Volume":"5305406",
+            "TimeZone": "US/Eastern"
+        },
+        {
+            "Symbol":"AAPL",
+            "OpenPrice" : "141.26",
+            "ClosingPrice":"146.24",
+            "Volume":"118854028",
+            "TimeZone": "US/Eastern"
+        }, 
+        {
+            "Symbol":"TSLA",
+            "OpenPrice" : "189.90",
+            "ClosingPrice":"190.72",
+            "Volume":"132703015",
+            "TimeZone": "US/Eastern"
+        },
+        {
+            "Symbol":"UPS",
+            "OpenPrice" : "167.5",
+            "ClosingPrice":"172.32",
+            "Volume":"3338898",
+            "TimeZone": "US/Eastern"
+        },
+        {
+            "Symbol":"MSFT",
+            "OpenPrice" : "235.43",
+            "ClosingPrice":"242.98",
+            "Volume":"46268021",
+            "TimeZone": "US/Eastern"
+        }
+    ]
+}
