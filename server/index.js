@@ -4,7 +4,7 @@ const cors =require('cors')
 
 const app = express()
 app.use(cors())
-app.use(express.static('STOCKSAPI'))
+app.use(express.static('StocksFind'))
 app.get('/',(req,res) => {
   res.send("Hello World")
 })
