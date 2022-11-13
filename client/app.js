@@ -1,4 +1,4 @@
-var options
+   var options
 
 
         // "Open:" + option.OpenPrice + "Close:" +option.ClosingPrice;
@@ -16,7 +16,7 @@ var options
                 const retrievedData = options.filter(entry =>entry.Symbol === selectedOption)
                  console.log(retrievedData);                 
                 // stocksData =  JSON.stringify(retrievedData);
-                 document.getElementById('demo').innerHTML = JSON.parse(retrievedData);
+                 document.getElementById('demo').innerHTML = JSON.stringify(retrievedData);
                 
 
                  //`${stocksData.Object.Symbol}<br>`
