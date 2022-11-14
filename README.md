@@ -10,24 +10,24 @@
 
 ### In Sever side,
 
--  need to install these dependencies
+ need to install these dependencies: express, cors
 
-- npm i express cors
+"`npm i express cors`"
 
 #### To run
 
-- npm start
+`**npm start**`
 
--[To view](http://localhost:5000/api/getstockdata)
+-[To view]`http://localhost:5000/api/getstockdata`
 
 ### In Client side,
 
--  need to install these dependencies
+ need to install these dependencies: lite-server
 
-- npm install lite-server
+"` npm install lite-server`"
 
 #### To run
 
-- npm start
+`** npm start**`
 
--[To view](http://localhost:3000/index.html)
+-[To view]`http://localhost:3000/index.html`
