@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+    <link href="resize.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <title>Stock</title>
+</head>
+<body>
+
+    <header id="header">
+        <section class="column small-12 medium-6 large-3">
+            <nav id="nav-bar" class="container">
+                <h1>Stock Finder</h1>
+                <ul>
+                    <li><a class="nav-link" href=index.html>Home</a></li>
+                    <li><a class="nav-link" href=chart.html>Chart</a></li>
+                    <li><a class="nav-link" href=contact.html>Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+<main>
+    <div class="container column small-12 medium-6 large-3">
+     
+       
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="name">Enter name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+            <label for="email">Email </label>  <br>
+            <input type="email" id="email" name="email" placeholder="email id" required> <br>
+            <div class="form-group">
+                <p id="desc">Any comments or suggestions?</p><br>
+                <textarea id="comment" name="comment" placeholder="Enter your comments here..." class="input-textarea" row="2" colspan="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+</main>
+<footer>
+    <section class="column small-12 medium-6 large-3">
+        <p class="col">
+            Copyright &#169;
+            <script>document.write(new Date().getFullYear())</script> All Rights Reserved
+        </p>
+    </section>
+</footer>
+<script src="app.js"></script>
+
+</body>
+
+</html>
