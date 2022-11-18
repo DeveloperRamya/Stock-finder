@@ -11,7 +11,7 @@
 -displayed chartJS
 
 *Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
--Used array to display chart
+-Used array to display stocks and chart
 
 * Responsive web design
 * Using Flexbox
