@@ -13,14 +13,21 @@
                    const selectedOption = document.getElementById('symbol').value
                    options =data.Stocks
                 console.log(options)
-                const retrievedData = options.filter(entry =>entry.Symbol === selectedOption)
-                 console.log(retrievedData);                 
-                // stocksData =  JSON.stringify(retrievedData);
-                 document.getElementById('demo').innerHTML = JSON.stringify(retrievedData);
-                
+                const retrievedData = options.find(entry =>entry.Symbol === selectedOption)
+                    console.log(retrievedData);           
+                  //  const obj = JSON.stringify(retrievedData);
+                   //const stocksData =  JSON.parse(options);
+                    document.getElementById('demo').innerHTML = "Symbol: " + retrievedData.Symbol + "</br>"
+                        + " Open price: " + retrievedData.OpenPrice + "</br> " + "Closing price: " + retrievedData.ClosingPrice + " </br>" +
+                        "Volume: " + retrievedData.Volume + "</br>" + "TimeZone: " + retrievedData.TimeZone;
+
+                    
+
+                   // document.getElementById('demo');
+                   // demo.innerHTML = JSON.parse(Stocks)[0].Symbol;
 
                  //`${stocksData.Object.Symbol}<br>`
-                // ${retrievedData.OpenPrice}<br>${retrievedData.ClosingPrice}<br>${retrievedData.Volume}<br>`
+                // //${retrievedData.OpenPrice}<br>${retrievedData.ClosingPrice}<br>${retrievedData.Volume}<br>`
                 });
 
         }
