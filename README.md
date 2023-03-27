@@ -1,7 +1,7 @@
 # Stock-finder
 ## Meet these requirements
 
-*Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file).
+*Create a node.js web server using a modern framework such as Express.js or Fastify.  
 -Created JSON[data.json] file and using Express.js. 
 
 *Retrieve data from a third-party API and use it to display something within your app.
